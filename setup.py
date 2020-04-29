@@ -10,6 +10,8 @@ A plugin for Sentry which sends SMS notifications via Kavenegar.
 """
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 install_requires = [
     'sentry',
@@ -26,7 +28,8 @@ setup(
     author_email='admin@mihanmail.com',
     url='https://github.com/amirasaran/sentry-kavenegar',
     description='A plugin for Sentry which sends SMS notifications via Kaveneger',
-    long_description=__doc__,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license='BSD',
     packages=find_packages(exclude=['tests']),
     zip_safe=False,
