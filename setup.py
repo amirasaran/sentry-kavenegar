@@ -12,10 +12,10 @@ from setuptools import setup, find_packages
 
 
 install_requires = [
-    'sentry>=7.0.0',
+    'sentry',
 
     # We don't need full `phonenumbers` library
-    'phonenumberslite<8.0',
+    'phonenumberslite',
     'kavenegar>=1.1.2',
 ]
 
@@ -37,7 +37,7 @@ setup(
             'kavenegar = sentry_kavenegar',
         ],
         'sentry.plugins': [
-            'kavenegar = sentry_kavehnegar.models:KavenegarPlugin',
+            'kavenegar = sentry_kavenegar.models:KavenegarPlugin',
         ]
     },
     classifiers=[
