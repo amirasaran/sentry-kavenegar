@@ -2,7 +2,7 @@
 sentry_kavenegar
 ~~~~~~~~~~~~~
 
-:copyright: (c) 2012 by Matt Robenolt.
+:copyright: (c) 2012 by Amir Asaran.
 :license: BSD, see LICENSE for more details.
 """
 

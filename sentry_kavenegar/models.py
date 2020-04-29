@@ -2,7 +2,7 @@
 sentry_kavenegar.models
 ~~~~~~~~~~~~~~~~~~~~
 
-:copyright: (c) 2016 by Matt Robenolt.
+:copyright: (c) 2016 by Amir Asaran.
 :license: BSD, see LICENSE for more details.
 """
 
@@ -73,7 +73,7 @@ class KavenegarConfigurationForm(forms.Form):
 
 
 class KavenegarPlugin(NotificationPlugin):
-    author = 'Matt Robenolt'
+    author = 'Amir Asaran'
     author_url = 'https://github.com/mattrobenolt'
     version = sentry_kavenegar.VERSION
     description = 'A plugin for Sentry which sends SMS notifications via Kavenegar'
@@ -101,10 +101,9 @@ class KavenegarPlugin(NotificationPlugin):
     def notify_users(self, group, event, **kwargs):
         project = group.project
 
-        body = 'Sentry [{0}] {1}: {2}'.format(
+        body = 'Sentry [{0}] {1}'.format(
             project.name.encode('utf-8'),
-            event.get_level_display().upper().encode('utf-8'),
-            event.error().encode('utf-8').splitlines()[0]
+            event.message_short.encode('utf-8')
         )
         body = body[:MAX_SMS_LENGTH]
 

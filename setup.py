@@ -5,7 +5,7 @@ sentry-kavenegar
 
 A plugin for Sentry which sends SMS notifications via Kavenegar.
 
-:copyright: (c) 2012 by Matt Robenolt
+:copyright: (c) 2012 by Amir Asaran
 :license: BSD, see LICENSE for more details.
 """
 from setuptools import setup, find_packages
