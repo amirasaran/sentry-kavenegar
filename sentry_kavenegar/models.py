@@ -53,6 +53,8 @@ def split_sms_to(data):
 class KavenegarConfigurationForm(forms.Form):
     api_key = forms.CharField(label=_('API KEY'), required=True,
                               widget=forms.TextInput(attrs={'class': 'span6'}))
+    sms_from = forms.CharField(label=_('SMS FROM'), required=True,
+                              widget=forms.TextInput(attrs={'class': 'span6'}))
     sms_to = forms.CharField(label=_('SMS To #s'), required=True,
                              help_text=_('Recipient(s) phone numbers separated by commas or lines'),
                              widget=forms.Textarea(attrs={'placeholder': 'e.g. +98935XXXXXXX, 0912XXXXXXXX'}))
@@ -111,6 +113,7 @@ class KavenegarPlugin(NotificationPlugin):
         api_key = self.get_option('api_key', project)
 
         sms_to = self.get_option('sms_to', project)
+        sms_from = self.get_option('sms_from', project)
         if not sms_to:
             return
         sms_to = split_sms_to(sms_to)
@@ -125,6 +128,7 @@ class KavenegarPlugin(NotificationPlugin):
             try:
                 phone = clean_phone(phone)
                 params = {
+                    'sender': sms_from,
                     'receptor': phone,
                     'message': body
                 }
