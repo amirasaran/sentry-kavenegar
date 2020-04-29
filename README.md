@@ -4,7 +4,7 @@
 [![Pypi](https://img.shields.io/badge/Pypi-yes-green.svg)](https://pypi.org/project/sentry-kavenegar/)
 
 # sentry-kavenegar
-A plugin for [Sentry](https://www.getsentry.com/) that sends SMS notifications via [Kavehnegar](https://kavenegar.com/)
+A plugin for [Sentry](https://www.getsentry.com/) that sends SMS notifications via [Kavenegar](https://kavenegar.com/)
 
 **Note**: Only works with IR numbers, mostly because I'm too lazy to think about international phone numbers and what to do with them. Feel free to submit a pull request.
 
