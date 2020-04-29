@@ -23,7 +23,7 @@ install_requires = [
 
 setup(
     name='sentry-kavenegar',
-    version='0.1.0',
+    version='0.1.1',
     author='Amir Asaran',
     author_email='admin@mihanmail.com',
     url='https://github.com/amirasaran/sentry-kavenegar',

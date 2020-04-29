@@ -1,6 +1,6 @@
 ### Project Status
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![PyPI version sentry-kavenegar](https://img.shields.io/badge/Pypi%20Version-0.1.0-green.svg)](https://pypi.org/project/sentry-kavenegar/)
+[![PyPI version sentry-kavenegar](https://img.shields.io/badge/Pypi%20Version-0.1.1-green.svg)](https://pypi.org/project/sentry-kavenegar/)
 [![Pypi](https://img.shields.io/badge/Pypi-yes-green.svg)](https://pypi.org/project/sentry-kavenegar/)
 
 # sentry-kavenegar
