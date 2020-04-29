@@ -9,10 +9,10 @@ A plugin for [Sentry](https://www.getsentry.com/) that sends SMS notifications v
 Sentry will automagically detect that it has been installed.
 
 ## Configuration
-`sentry-kavenegar` needs 4 pieces of information to set this up correctly.
+`sentry-kavenegar` needs 2 pieces of information to set this up correctly.
 
 ### Account SID & Auth Token
-The Account SID and Auth Token can both be found on your [Kavenegar account dashboard](https://panel.kavenegar.com/client/setting/account).
+The Account API KEY can both be found on your [Kavenegar account dashboard](https://panel.kavenegar.com/client/setting/account).
 ![](http://i.imgur.com/XfrTV2R.png)
 
 ### SMS From # 
