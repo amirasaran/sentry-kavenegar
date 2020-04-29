@@ -101,9 +101,10 @@ class KavenegarPlugin(NotificationPlugin):
     def notify_users(self, group, event, **kwargs):
         project = group.project
 
-        body = 'Sentry [{0}] {1}'.format(
-            project.name.encode('utf-8'),
-            event.message_short.encode('utf-8')
+        body = "Sentry [{0}] {1}: {2}".format(
+            project.name.encode("utf-8"),
+            event.group.get_level_display().upper().encode("utf-8"),
+            event.title.encode("utf-8").splitlines()[0],
         )
         body = body[:MAX_SMS_LENGTH]
 
