@@ -76,9 +76,9 @@ class KavenegarConfigurationForm(forms.Form):
 
 class KavenegarPlugin(NotificationPlugin):
     author = 'Amir Asaran'
-    author_url = 'https://github.com/mattrobenolt'
+    author_url = 'https://github.com/amirasaran/sentry-kavenegar'
     version = sentry_kavenegar.VERSION
-    description = 'A plugin for Sentry which sends SMS notifications via Kavenegar'
+    description = 'A plugin for Sentry, which sends SMS notifications via Kavenegar'
     resource_links = (
         ('Documentation', 'https://github.com/amirasaran/sentry-kavenegar/blob/master/README.md'),
         ('Bug Tracker', 'https://github.com/amirasaran/sentry-kavenegar/issues'),
